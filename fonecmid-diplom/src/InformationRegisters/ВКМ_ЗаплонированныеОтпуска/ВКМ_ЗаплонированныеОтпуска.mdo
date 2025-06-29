@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d484d0e1-087e-4bfd-b9ef-fe1da0b3d6eb">
+  <producedTypes>
+    <selectionType typeId="f1bbc24c-661b-4dea-82d1-05d3dbd3ecd9" valueTypeId="039fcd96-d9af-4b0a-860d-b42c977dbc4b"/>
+    <listType typeId="04b44499-0e72-4a8a-8464-b980358d43e2" valueTypeId="18fe20e8-7b8d-481c-8318-971ffe7c0b03"/>
+    <managerType typeId="d739cab5-98d2-41cd-abd5-7428662eaa74" valueTypeId="06f2a6b2-bcfc-4f62-ae5b-73737042c895"/>
+    <recordSetType typeId="b07c195c-0817-4c18-823f-6c4cfc310c9b" valueTypeId="973b3a02-214b-44cc-b20a-404185d1c8c0"/>
+    <recordKeyType typeId="72c1575d-7ca7-4d2f-ab51-23a971959dfc" valueTypeId="59d7e104-8946-4d7d-86cc-311adb5a252f"/>
+    <recordType typeId="6bfdb034-0440-420f-8133-df46b4abec13" valueTypeId="3186c5b0-f09a-4d22-9dcf-02111e33c68d"/>
+    <recordManagerType typeId="57d438cf-d461-41cd-bede-2c0cd1b2af8f" valueTypeId="7728b610-0454-401d-9cfe-2512cd5ed1bb"/>
+  </producedTypes>
+  <name>ВКМ_ЗаплонированныеОтпуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заплонированные отпуска</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="32c08a62-8989-40eb-b1c4-054c6ad3fd81">
+    <name>ЗаплонированоДнейОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заплонировано дней отпуска</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cf8728be-b5ca-4f18-8864-76dbdb1ba87f">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c7756483-dd63-4133-9aed-3965eeaf3c9c">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=yyyy</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
